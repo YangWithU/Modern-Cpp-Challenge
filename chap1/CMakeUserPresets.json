@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/root/Modern_cpp_challenge/chap1/build/Debug/generators/CMakePresets.json"
+    ]
+}

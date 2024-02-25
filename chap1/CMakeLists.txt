@@ -11,6 +11,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 enable_testing()
 
-add_executable(bin_result main.cpp)
+find_package(GTest REQUIRED)
 
-target_link_libraries(bin_result)
+add_executable(bin_result main.cpp q1.cpp)
+
+target_link_libraries(bin_result GTest::GTest)
+
+include(GoogleTest)
+gtest_discover_tests(bin_result)
