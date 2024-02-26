@@ -13,7 +13,7 @@ enable_testing()
 
 find_package(GTest REQUIRED)
 
-add_executable(bin_result main.cpp q1.cpp q2.cpp)
+add_executable(bin_result main.cpp q1.cpp q2.cpp q3.cpp)
 
 target_link_libraries(bin_result GTest::GTest)
 
